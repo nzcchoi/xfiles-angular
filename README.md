@@ -1,6 +1,7 @@
 # Xfiles
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+This project uses the Material Angular Dashboard(https://github.com/CreativeIT/material-angular-dashboard) version
 
 ## Development server
 
