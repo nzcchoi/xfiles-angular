@@ -91,7 +91,6 @@
   }
 }
 
-
 @mixin typo-weather-temperature($usePreferred: true) {
   @include typo-preferred-font($usePreferred);
 

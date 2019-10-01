@@ -17,7 +17,8 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
   public emailPattern = '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$';
   public error: string;
 
-  constructor(private authService: AuthService,
+  constructor(
+    private authService: AuthService,
     private fb: FormBuilder,
     private router: Router) {
     super();
@@ -45,7 +46,8 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
     this.error = null;
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.getRawValue())
-        .subscribe(res => this.router.navigate(['/app/dashboard']),
+        .subscribe(
+          res => this.router.navigate(['/app/dashboard']),
           error => this.error = error.message);
     }
   }
