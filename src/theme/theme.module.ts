@@ -6,10 +6,8 @@ import { RouterModule } from '@angular/router';
 import { CardModule } from './components/card';
 import { CheckboxComponent } from './components/checkbox';
 import { IconToggleComponent } from './components/icon-toggle';
-import { LineChartComponent } from './components/line-chart';
 import { PageTopComponent } from './components/page-top';
 import { PaginationComponent } from './components/pagination';
-import { PieChartComponent } from './components/pie-chart';
 import { ProgressComponent } from './components/progress';
 import { RadioButtonComponent } from './components/radio-button';
 import { RightSidebarModule } from './components/right-sidebar';
@@ -29,8 +27,6 @@ const BASE_COMPONENTS = [
   PaginationComponent,
   ToggleComponent,
   UpgradableComponent,
-  PieChartComponent,
-  LineChartComponent,
 ];
 
 const BASE_DIRECTIVES = [];

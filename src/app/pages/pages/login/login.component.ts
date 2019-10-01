@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { AuthService } from '@services/';
-import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
+import { BlankLayoutCardComponent } from '../../../components/blank-layout-card/blank-layout-card.component';
+import { AuthService } from '../../../services';
 
 @Component({
   selector: 'app-login',
@@ -18,8 +18,8 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
   public error: string;
 
   constructor(private authService: AuthService,
-              private fb: FormBuilder,
-              private router: Router) {
+    private fb: FormBuilder,
+    private router: Router) {
     super();
 
     this.loginForm = this.fb.group({
@@ -46,7 +46,7 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.getRawValue())
         .subscribe(res => this.router.navigate(['/app/dashboard']),
-                   error => this.error = error.message);
+          error => this.error = error.message);
     }
   }
 

@@ -28,7 +28,7 @@ const iconSize = 20;
 export class MapAdvancedComponent extends UpgradableComponent implements AfterViewInit, OnDestroy {
   @HostBinding('class.map-advanced') private map = true;
 
-  @ViewChild('gmap') gmapElement: any;
+  @ViewChild('gmap', { static: true }) gmapElement: any;
   public gMap: any;
   public data = [];
   private prevZoom = 2;
@@ -127,11 +127,11 @@ export class MapAdvancedComponent extends UpgradableComponent implements AfterVi
     parent.style.overflow = 'visible';
     infowindow.innerHTML = `<div class="mdl-card">
                                   <div class="mdl-card__title">
-                                    <h1 class="mdl-card__title-text">${ item.name }</h1>
+                                    <h1 class="mdl-card__title-text">${ item.name}</h1>
                                   </div>
                                   <div class="mdl-card__supporting-text no-padding">
-                                    <div>Population:<span>${ item.population }</span></div>
-                                    <div>Area:<span>${ item.area } km<sup>2</sup></span></div>
+                                    <div>Population:<span>${ item.population}</span></div>
+                                    <div>Area:<span>${ item.area} km<sup>2</sup></span></div>
                                   </div>
                              </div>`;
     infowindow.classList.add('window-info');

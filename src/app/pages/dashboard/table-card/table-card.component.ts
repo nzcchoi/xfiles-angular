@@ -17,7 +17,7 @@ export class TableCardComponent {
   ];
   private data: object[] = [
     {
-      project: 'Darkboard',
+      project: 'xFiles.app',
       responsible: [
         {
           color: 'color--light-blue',

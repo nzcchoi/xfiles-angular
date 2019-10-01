@@ -6,8 +6,6 @@ import { ThemeModule } from 'theme';
 
 import { CotoneasterCardComponent } from './cotoneaster-card';
 import { DashboardComponent } from './dashboard.component';
-import { LineChartComponent } from './line-chart';
-import { PieChartComponent } from './pie-chart';
 import { RobotCardComponent } from './robot-card';
 import { TableCardComponent } from './table-card';
 import { TodoListComponent } from './todo-list';
@@ -22,8 +20,6 @@ import { WeatherComponent } from './weather';
   ],
   declarations: [
     DashboardComponent,
-    LineChartComponent,
-    PieChartComponent,
     WeatherComponent,
     CotoneasterCardComponent,
     TableCardComponent,

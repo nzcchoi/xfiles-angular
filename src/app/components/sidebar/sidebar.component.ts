@@ -8,7 +8,7 @@ import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sideb
   templateUrl: '../../../theme/components/sidebar/sidebar.component.html',
 })
 export class SidebarComponent extends BaseSidebarComponent {
-  public title = 'darkboard';
+  public title = 'xfiles.app';
   public menu = [
     { name: 'Classic Dashboard', link: '/app/dashboard', icon: 'dashboard' },
     { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
@@ -41,16 +41,6 @@ export class SidebarComponent extends BaseSidebarComponent {
       { name: 'Simple map', link: '/maps/simple' },
       { name: 'Advanced map', link: '/maps/advanced' },
       ],
-    },
-    { name: 'Charts', link: '/app/charts', icon: 'multiline_chart' },
-    {
-      name: 'Pages', children: [
-      { name: 'Sign in', link: '/pages/login' },
-      { name: 'Sign up', link: '/pages/sign-up' },
-      { name: 'Forgot password', link: '/pages/forgot-password' },
-      { name: '404', link: '/pages/error' },
-      ],
-      icon: 'pages',
     },
   ];
 }

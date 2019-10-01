@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-angular-dashboard": {
+    "xfiles": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -49,18 +49,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "material-angular-dashboard:build"
+            "browserTarget": "xfiles:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "material-angular-dashboard:build:production"
+              "browserTarget": "xfiles:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material-angular-dashboard:build"
+            "browserTarget": "xfiles:build"
           }
         },
         "lint": {
@@ -76,15 +76,15 @@
         }
       }
     },
-    "material-angular-dashboard-e2e": {
+    "xfiles-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application"
     }
   },
-  "defaultProject": "material-angular-dashboard",
+  "defaultProject": "xfiles",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "npm"
   },
   "schematics": {
     "@schematics/angular:component": {
